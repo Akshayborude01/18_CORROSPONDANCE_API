@@ -8,7 +8,7 @@ import com.spring.user.entities.AppUser;
 
 public interface AppUserRepo extends JpaRepository<AppUser, Serializable> {
 	
-	public AppUser findByCaseNum();
-	public AppUser findByAppId(Integer appId);
+//	public AppUser findByCaseNum();
+	public AppUser findById(Integer appId);
 
 }

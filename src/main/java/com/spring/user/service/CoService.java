@@ -1,9 +1,9 @@
 package com.spring.user.service;
 
-import com.spring.user.entities.FinalResponse;
+import com.spring.user.entities.CoResponse;
 
 public interface CoService {
 
-	public FinalResponse sendNotices();
+	public CoResponse sendNotices();
  
 }

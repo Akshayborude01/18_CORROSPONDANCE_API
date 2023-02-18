@@ -1,0 +1,25 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 8181
+spring:
+  application:
+    name: AR_API
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: akshay@954713
+    url: jdbc:mysql://localhost:3306/appregister
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+

@@ -7,14 +7,14 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "FINAL_RESPONSE")
-public class FinalResponse {
+public class CoResponse {
 	
 	    @Id
 	    @GeneratedValue
 		private Integer id;
-		private Integer totalRecordsProcessed;
-		private Integer approvedCitizenCount;
-		private Integer deniedCitizenCount;
+		private long totalRecordsProcessed;
+		private long approvedCitizenCount;
+		private long deniedCitizenCount;
 		/**
 		 * @return the id
 		 */
@@ -30,59 +30,57 @@ public class FinalResponse {
 		/**
 		 * @return the totalRecordsProcessed
 		 */
-		public Integer getTotalRecordsProcessed() {
+		public long getTotalRecordsProcessed() {
 			return totalRecordsProcessed;
 		}
 		/**
 		 * @param totalRecordsProcessed the totalRecordsProcessed to set
 		 */
-		public void setTotalRecordsProcessed(Integer totalRecordsProcessed) {
+		public void setTotalRecordsProcessed(long totalRecordsProcessed) {
 			this.totalRecordsProcessed = totalRecordsProcessed;
 		}
 		/**
 		 * @return the approvedCitizenCount
 		 */
-		public Integer getApprovedCitizenCount() {
+		public long getApprovedCitizenCount() {
 			return approvedCitizenCount;
 		}
 		/**
 		 * @param approvedCitizenCount the approvedCitizenCount to set
 		 */
-		public void setApprovedCitizenCount(Integer approvedCitizenCount) {
+		public void setApprovedCitizenCount(long approvedCitizenCount) {
 			this.approvedCitizenCount = approvedCitizenCount;
 		}
 		/**
 		 * @return the deniedCitizenCount
 		 */
-		public Integer getDeniedCitizenCount() {
+		public long getDeniedCitizenCount() {
 			return deniedCitizenCount;
 		}
 		/**
 		 * @param deniedCitizenCount the deniedCitizenCount to set
 		 */
-		public void setDeniedCitizenCount(Integer deniedCitizenCount) {
+		public void setDeniedCitizenCount(long deniedCitizenCount) {
 			this.deniedCitizenCount = deniedCitizenCount;
 		}
 		@Override
 		public String toString() {
-			return "FinalResponse [id=" + id + ", totalRecordsProcessed=" + totalRecordsProcessed
+			return "CoResponse [id=" + id + ", totalRecordsProcessed=" + totalRecordsProcessed
 					+ ", approvedCitizenCount=" + approvedCitizenCount + ", deniedCitizenCount=" + deniedCitizenCount
 					+ "]";
 		}
-		public FinalResponse(Integer id, Integer totalRecordsProcessed, Integer approvedCitizenCount,
-				Integer deniedCitizenCount) {
+		public CoResponse(Integer id, long totalRecordsProcessed, long approvedCitizenCount, long deniedCitizenCount) {
 			super();
 			this.id = id;
 			this.totalRecordsProcessed = totalRecordsProcessed;
 			this.approvedCitizenCount = approvedCitizenCount;
 			this.deniedCitizenCount = deniedCitizenCount;
 		}
-		public FinalResponse() {
+		public CoResponse() {
 			super();
 			// TODO Auto-generated constructor stub
 		}
 		
-		
-		
 
+		
 }

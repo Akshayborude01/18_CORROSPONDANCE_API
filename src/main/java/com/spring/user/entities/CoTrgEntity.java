@@ -5,6 +5,7 @@ import java.util.Arrays;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 
 @Entity
@@ -14,8 +15,12 @@ public class CoTrgEntity {
 	@Id
 	@GeneratedValue
 	private Integer inCoTrgId;
+	
 	private Long caseNum;
+	
+	@Lob
 	private byte[] pdf;
+	
 	private String trgStatus;
 
 	public Integer getInCoTrgId() {

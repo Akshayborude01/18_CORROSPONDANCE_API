@@ -9,4 +9,6 @@ import com.spring.user.entities.DcCaseEntity;
 public interface DcCaseRepository extends JpaRepository<DcCaseEntity, Serializable> {
 
 	public Integer findByAppId(long caseNum);
+	
+
 }

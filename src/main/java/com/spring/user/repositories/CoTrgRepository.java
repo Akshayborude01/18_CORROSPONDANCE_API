@@ -9,7 +9,7 @@ import com.spring.user.entities.CoTrgEntity;
 
 public interface CoTrgRepository extends JpaRepository<CoTrgEntity, Serializable> {
 
-	public List<CoTrgEntity> findAllByTrgStatus();
+	public List<CoTrgEntity> findByTrgStatus(String status);
 
 	
 }
